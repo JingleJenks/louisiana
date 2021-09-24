@@ -26,14 +26,17 @@ body {
   padding: 0px;
   margin: 0px;
 }
+/* HEADER */
 .header_img {
   width: 100vw;
   z-index: -1;
   position: absolute;
 }
 .back_arrow {
-  padding-left: 1vw;
+  padding-left: 2vw;
   position: absolute;
+  margin-bottom: 2vw;
+  font-size: 1.1rem;
 }
 h1 {
   color: white;
@@ -43,4 +46,9 @@ p.topheader {
   align-items: flex-end;
 }
 img.topheader {
+  width: 100vw;
+}
+h1.title {
+  color: white;
+  margin-left: 20vw;
 }
