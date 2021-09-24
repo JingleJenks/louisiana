@@ -1,5 +1,6 @@
 /* NAVIGATION  */
 nav {
+  padding-top: 2vw;
 }
 
 nav ul {
@@ -8,7 +9,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 60vw;
+  margin-left: 65vw;
   width: 30vw;
   padding: 2vw;
   padding-bottom: 0vw;
@@ -16,14 +17,20 @@ nav ul {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration-line: underline;
   font-size: 1rem;
   line-height: 1rem;
 }
 body {
-  margin: 2vw;
+  padding: 0px;
+  margin: 0px;
 }
 .header_img {
   width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+.back_arrow {
+  padding-left: 1vw;
 }
