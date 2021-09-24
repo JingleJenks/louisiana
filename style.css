@@ -1,4 +1,17 @@
 /* NAVIGATION  */
+nav {
+}
+
 nav ul {
   list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50vw;
+}
+
+nav ul a {
+  color: black;
+  text-decoration-line: underline;
 }
