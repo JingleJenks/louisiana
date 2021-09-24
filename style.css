@@ -27,10 +27,11 @@ body {
   margin: 0px;
 }
 /* HEADER */
-.header_img {
+.bg_img {
   width: 100vw;
   z-index: -1;
   position: absolute;
+  height: 80vh;
 }
 .back_arrow {
   padding-left: 2vw;
@@ -51,4 +52,20 @@ img.topheader {
 h1.title {
   color: white;
   margin-left: 20vw;
+  font-size: 130px;
+}
+h1.sub_title {
+  background-color: white;
+  color: #231f20;
+  margin-left: 20vw;
+  font-size: 50px;
+  display: flex;
+  z-index: 0;
+  position: relative;
+  padding: 3vw;
+}
+/* MAIN */
+main {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
 }
