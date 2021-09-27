@@ -115,11 +115,11 @@ ul.memory a {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  background-color: tomato;
   width: 60vw;
   height: 80vh;
   margin: auto;
   grid-row-start: 2;
+  position: relative;
 }
 
 .game_title2 {
@@ -132,27 +132,26 @@ ul.memory a {
   margin-right: 2vw;
   margin-top: -5vh;
   margin-bottom: 5vh;
-  z-index: -1;
+  z-index: -2;
 }
 article.one,
 .two,
 .three {
-  background-color: teal;
   width: auto;
   height: auto;
   margin: 1vh;
   grid-row-start: 1;
-  display: block;
+
   position: relative;
 }
 .front_face {
   background-color: white;
   text-align: center;
   font-size: 14rem;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
+  width: auto;
+  height: auto;
+  /* z-index: 0;
+  position: absolute; */
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: all 7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -162,12 +161,12 @@ article.one,
   transform: rotateY(180deg);
 }
 
-article.one img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  position: absolute;
+.game_memory img {
+  /* display: block; */
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  /* position: absolute; */
 }
 /* article.one img:hover {
   transform: rotateY(0);
@@ -176,7 +175,6 @@ article.one img {
 article.four,
 .five,
 .six {
-  background-color: yellowgreen;
   width: auto;
   height: auto;
   margin: 1vh;
@@ -185,7 +183,6 @@ article.four,
 article.seven,
 .eight,
 .nine {
-  background-color: violet;
   width: auto;
   height: auto;
   margin: 1vh;
