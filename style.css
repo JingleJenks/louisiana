@@ -112,6 +112,15 @@ ul.memory a {
   z-index: -1;
   grid-row-start: 1;
 }
+
+aside {
+  grid-row-start: 2;
+  position: sticky;
+  width: 10vw;
+}
+aside .info_memory {
+  width: 10vw;
+}
 .game_memory {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
