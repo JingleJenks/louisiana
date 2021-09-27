@@ -115,10 +115,9 @@ ul.memory a {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  height: 10vw;
   background-color: tomato;
   width: 60vw;
-  height: 50vh;
+  height: 80vh;
   margin: auto;
   grid-row-start: 2;
 }
