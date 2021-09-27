@@ -115,11 +115,12 @@ ul.memory a {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  width: 60vw;
-  height: 80vh;
+  width: 50vw;
+  height: 70vh;
   margin: auto;
   grid-row-start: 2;
   position: relative;
+  background-color: thistle;
 }
 
 .game_title2 {
@@ -128,34 +129,37 @@ ul.memory a {
   font-family: gotham;
   display: flex;
   justify-content: flex-end;
-  grid-row-start: 5;
+  grid-row-start: 3;
   margin-right: 2vw;
-  margin-top: -5vh;
+  margin-top: -2vh;
   margin-bottom: 5vh;
   z-index: -2;
 }
 article.one,
 .two,
-.three {
-  width: auto;
-  height: auto;
-  margin: 1vh;
-  grid-row-start: 1;
-
-  position: relative;
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  display: flex;
+  justify-content: center;
 }
+
 .front_face {
-  background-color: white;
   text-align: center;
   font-size: 14rem;
-  width: auto;
-  height: auto;
-  /* z-index: 0;
-  position: absolute; */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: all 7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
 }
 .front_face:hover {
   transform: rotateY(180deg);
@@ -163,15 +167,24 @@ article.one,
 
 .game_memory img {
   /* display: block; */
-  width: 50%;
-  height: 50%;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   /* position: absolute; */
 }
 /* article.one img:hover {
   transform: rotateY(0);
 } */
 
+article.one,
+.two,
+.three {
+  width: auto;
+  height: auto;
+  margin: 1vh;
+  grid-row-start: 1;
+  position: relative;
+}
 article.four,
 .five,
 .six {
@@ -179,6 +192,7 @@ article.four,
   height: auto;
   margin: 1vh;
   grid-row-start: 2;
+  position: relative;
 }
 article.seven,
 .eight,
@@ -187,4 +201,5 @@ article.seven,
   height: auto;
   margin: 1vh;
   grid-row-start: 3;
+  position: relative;
 }
