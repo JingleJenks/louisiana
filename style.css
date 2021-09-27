@@ -112,14 +112,29 @@ ul.memory a {
   z-index: -1;
   grid-row-start: 1;
 }
-
-aside {
+.row2 {
+  display: grid;
   grid-row-start: 2;
-  position: sticky;
-  width: 10vw;
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
 }
-aside .info_memory {
+
+.aside1 {
+  font-family: gotham-light;
+  grid-column-start: 1;
+  /* width: 10vw; */
+  margin-left: 2vw;
+}
+.aside1 .aside_title {
   width: 10vw;
+  text-align: left;
+}
+.aside1 li {
+  line-height: 1.5rem;
+  list-style-type: none;
+}
+.aside1 ul {
+  list-style-position: inside;
+  padding-left: 0;
 }
 .game_memory {
   display: grid;
@@ -128,7 +143,8 @@ aside .info_memory {
   width: 45vw;
   height: 62vh;
   margin: auto;
-  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
   grid-row-end: 3;
   background-color: black;
 }
@@ -190,6 +206,25 @@ article.seven,
 .nine {
   grid-row-start: 3;
   position: relative;
+}
+
+.aside_2 {
+  font-family: gotham-light;
+  grid-column-start: 3;
+  /* width: 10vw; */
+  margin-left: -5vw;
+  margin-right: 0.5vw;
+}
+.aside_title {
+  text-align: left;
+}
+.aside_2 li {
+  line-height: 1.5rem;
+  list-style-type: none;
+}
+.aside_2 ul {
+  list-style-position: inside;
+  padding-left: 0px;
 }
 .game_title2 {
   color: black;
