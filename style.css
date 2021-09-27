@@ -72,8 +72,9 @@ main {
 .inner_artist {
   grid-column-start: 1;
   grid-column-end: 21;
+  display: flex;
+  flex-direction: row;
 }
 img.inner_artist {
-  grid-column-start: 1;
-  grid-column-end: 10;
+  width: 30vw;
 }
