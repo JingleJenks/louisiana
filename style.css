@@ -78,3 +78,7 @@ main {
 img.inner_artist {
   width: 30vw;
 }
+/* MEMORY */
+ul.memory a {
+  color: black;
+}
