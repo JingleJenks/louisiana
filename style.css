@@ -93,6 +93,11 @@ img.inner_artist {
   width: 30vw;
 }
 /* MEMORY */
+#main_memory {
+  display: grid;
+  grid-template-rows: 3, auto;
+  grid-template-columns: unset;
+}
 ul.memory a {
   color: black;
 }
@@ -100,4 +105,20 @@ ul.memory a {
   color: black;
   font-size: 10rem;
   font-family: gotham;
+  display: flex;
+  justify-content: flex-start;
+}
+.game_memory {
+  display: flex;
+  justify-content: center;
+  height: 10vw;
+  background-color: tomato;
+}
+
+.game_title2 {
+  color: black;
+  font-size: 10rem;
+  font-family: gotham;
+  display: flex;
+  justify-content: flex-end;
 }
