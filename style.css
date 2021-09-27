@@ -107,8 +107,9 @@ ul.memory a {
   font-family: gotham;
   display: flex;
   justify-content: flex-start;
-  margin-top: 1vh;
+  margin-top: 5vh;
   margin-bottom: 1vh;
+  z-index: -1;
 }
 .game_memory {
   display: grid;
@@ -129,6 +130,8 @@ ul.memory a {
   display: flex;
   justify-content: flex-end;
   grid-row-start: 5;
+  margin-right: 2vw;
+  z-index: -1;
 }
 article.one,
 .two,
