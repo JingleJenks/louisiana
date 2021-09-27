@@ -93,9 +93,9 @@ img.inner_artist {
   width: 30vw;
 }
 /* MEMORY */
-#main_memory {
+.main_memory {
   display: grid;
-  grid-template-rows: 5, auto;
+  grid-template-rows: auto;
   grid-template-columns: unset;
 }
 ul.memory a {
@@ -110,31 +110,20 @@ ul.memory a {
   margin-top: 5vh;
   margin-bottom: 1vh;
   z-index: -1;
+  grid-row-start: 1;
 }
 .game_memory {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   width: 50vw;
-  height: 70vh;
+  height: 60vh;
   margin: auto;
   grid-row-start: 2;
-  position: relative;
+  grid-row-end: 3;
   background-color: thistle;
 }
 
-.game_title2 {
-  color: black;
-  font-size: 10rem;
-  font-family: gotham;
-  display: flex;
-  justify-content: flex-end;
-  grid-row-start: 3;
-  margin-right: 2vw;
-  margin-top: -2vh;
-  margin-bottom: 5vh;
-  z-index: -2;
-}
 article.one,
 .two,
 .three,
@@ -144,15 +133,17 @@ article.one,
 .seven,
 .eight,
 .nine {
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
 }
 
 .front_face {
   text-align: center;
-  font-size: 14rem;
+  font-size: 10rem;
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: 1;
   position: absolute;
   backface-visibility: hidden;
@@ -168,38 +159,37 @@ article.one,
 .game_memory img {
   /* display: block; */
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: 0;
-  /* position: absolute; */
 }
-/* article.one img:hover {
-  transform: rotateY(0);
-} */
 
 article.one,
 .two,
 .three {
-  width: auto;
-  height: auto;
-  margin: 1vh;
   grid-row-start: 1;
   position: relative;
 }
 article.four,
 .five,
 .six {
-  width: auto;
-  height: auto;
-  margin: 1vh;
   grid-row-start: 2;
   position: relative;
 }
 article.seven,
 .eight,
 .nine {
-  width: auto;
-  height: auto;
-  margin: 1vh;
   grid-row-start: 3;
   position: relative;
+}
+.game_title2 {
+  color: black;
+  font-size: 10rem;
+  font-family: gotham;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-row-start: 3;
+  margin-right: 2vw;
+  z-index: -2;
+  margin-top: 0;
 }
