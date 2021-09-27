@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "gotham";
+  src: url("./font/Gotham-Black.otf");
+}
+@font-face {
+  font-family: "gotham-light";
+  src: url("./font/Gotham-Light.otf");
+}
+html {
+  font-family: gotham;
+}
+
 /* NAVIGATION  */
 nav {
   padding-top: 2vw;
@@ -9,11 +21,12 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 65vw;
-  width: 30vw;
-  padding: 2vw;
+  margin-left: 60vw;
+  width: 35vw;
+  padding: 1vw;
   padding-bottom: 0vw;
   padding-top: 0vw;
+  gap: 0.5vw;
 }
 
 a {
@@ -21,6 +34,7 @@ a {
   text-decoration-line: underline;
   font-size: 1rem;
   line-height: 1rem;
+  font-family: gotham-light;
 }
 body {
   padding: 0px;
@@ -81,4 +95,9 @@ img.inner_artist {
 /* MEMORY */
 ul.memory a {
   color: black;
+}
+.game_title {
+  color: black;
+  font-size: 10rem;
+  font-family: gotham;
 }
