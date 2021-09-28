@@ -354,9 +354,22 @@ ul.memory a {
   z-index: -1;
   grid-row-start: 1;
 }
+.game_title2 {
+  color: black;
+  font-size: 10rem;
+  font-family: gotham;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5vh;
+  margin-bottom: 1vh;
+  z-index: -2;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
 .row2 {
   display: grid;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-template-columns: 0.2fr 0.6fr 0.2fr;
 }
 
@@ -390,7 +403,38 @@ ul.memory a {
   grid-row-end: 3;
   background-color: black;
 }
-
+.aside2_2 {
+}
+.aside2 {
+  background-color: #8dc5b2;
+  transform: rotate(-14.34deg);
+  width: 150vw;
+  top: 120vh;
+  left: -6vw;
+  position: absolute;
+  margin: 0px;
+  display: grid;
+  font-family: gotham-light;
+  padding-left: 10vw;
+  color: white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.aside2 .c1r1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  padding: 0px;
+}
+.aside2 .c2r2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding: 0px;
+}
+.aside2 .c3r3 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  padding: 0px;
+}
 article.one,
 .two,
 .three,
@@ -467,16 +511,4 @@ article.seven,
 .aside_2 ul {
   list-style-position: inside;
   padding-left: 0px;
-}
-.game_title2 {
-  color: black;
-  font-size: 10rem;
-  font-family: gotham;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  grid-row-start: 3;
-  margin-right: 2vw;
-  z-index: -2;
-  margin-top: 0;
 }
