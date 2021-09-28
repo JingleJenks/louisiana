@@ -256,6 +256,8 @@ footer {
   text-align: left;
   list-style-type: none;
   line-height: 3vh;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 .c2_r1 {
   grid-column-start: 2;
@@ -271,6 +273,7 @@ footer {
   font-family: gotham-light;
   font-size: 5em;
   margin-top: 0px;
+  margin-left: 0px;
 }
 
 .c3_r1 {
@@ -289,7 +292,13 @@ footer {
   font-size: 5em;
   margin-top: 0px;
 }
-
+.c1_r2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: xx-small;
+  font-family: gotham-light;
+  padding-top: 10vw;
+}
 /* MEMORY */
 
 .main_memory {
