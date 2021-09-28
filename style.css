@@ -235,6 +235,27 @@ main {
   width: max-content;
 }
 
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.6fr;
+  grid-template-rows: 0.8fr 0.2fr;
+  background-color: black;
+  color: white;
+}
+.c1_r1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.c1_r1 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  list-style-type: none;
+  line-height: 3vh;
+}
 /* MEMORY */
 
 .main_memory {
