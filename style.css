@@ -242,6 +242,7 @@ footer {
   grid-template-rows: 0.8fr 0.2fr;
   background-color: black;
   color: white;
+  padding: 3vw;
 }
 .c1_r1 {
   grid-column-start: 1;
@@ -264,6 +265,23 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: left;
+  list-style-type: none;
+  line-height: 3vh;
+  font-family: gotham-light;
+  font-size: 5em;
+  margin-top: 0px;
+}
+
+.c3_r1 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.c3_r1 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   text-align: left;
   list-style-type: none;
   line-height: 3vh;
