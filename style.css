@@ -298,6 +298,12 @@ footer {
   font-size: xx-small;
   font-family: gotham-light;
   padding-top: 10vw;
+  display: flex;
+  align-items: flex-end;
+  color: #949393;
+}
+.c1_r2 p {
+  justify-content: flex-end;
 }
 .c3_r2 {
   grid-column-start: 3;
@@ -313,8 +319,11 @@ footer {
   align-items: flex-end;
   text-align: left;
   list-style-type: none;
-  line-height: 3vh;
   margin-top: 0px;
+}
+.c3_r2 a {
+  line-height: 3vh;
+  color: #949393;
 }
 /* MEMORY */
 
