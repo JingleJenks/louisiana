@@ -89,12 +89,15 @@ h1.sub_title {
 main {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: auto;
 }
-.game_card {
+.game_card1 {
   display: grid;
   grid-template-columns: 0.3fr, 0.7fr;
   grid-column-start: 1;
   grid-column-end: 20;
+  grid-row-start: 1;
+  margin-left: 0.5vw;
 }
 
 .column1 {
@@ -102,6 +105,7 @@ main {
 }
 .inner_artist {
   width: 100%;
+  height: 100%;
 }
 
 .column2 {
@@ -125,8 +129,10 @@ main {
 }
 .artist_button {
   grid-row-start: 3;
-  background-color: yellowgreen;
+  background-color: #8dc5b2;
   color: white;
+  padding: 0.9vw;
+  width: max-content;
 }
 /* MEMORY */
 
