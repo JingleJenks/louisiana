@@ -234,7 +234,15 @@ main {
   padding: 0.9vw;
   width: max-content;
 }
-
+.footer_memory {
+  display: grid;
+  grid-row-start: 5;
+  grid-template-columns: 0.3fr 0.5fr 0.2fr;
+  grid-template-rows: 0.8fr 0.2fr;
+  background-color: black;
+  color: white;
+  padding: 3vw;
+}
 /* footer */
 footer {
   display: grid;
@@ -370,7 +378,7 @@ ul.memory a {
 .row2 {
   display: grid;
   grid-row-start: 3;
-  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  grid-template-columns: 1fr 5fr;
   top: -5vh;
   position: relative;
 }
@@ -378,7 +386,7 @@ ul.memory a {
 .aside1 {
   font-family: gotham-light;
   grid-column-start: 1;
-  /* width: 10vw; */
+  width: max-content;
   margin-left: 2vw;
 }
 .aside1 .aside_title {
@@ -393,39 +401,42 @@ ul.memory a {
   list-style-position: inside;
   padding-left: 0;
 }
-.game_memory {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+.cardgame {
   width: 45vw;
   height: 62vh;
-  margin: auto;
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 3;
   background-color: black;
 }
-.aside2_2 {
+.game_memory {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .aside2 {
   background-color: #8dc5b2;
-  transform: rotate(-14.34deg);
+  transform: rotate(-10deg);
   width: 150vw;
-  top: 120vh;
-  left: -6vw;
-  position: absolute;
+  /* top: 50vh;
+  /* left: -6vw; */
+  position: relative;
   margin: 0px;
   display: grid;
   font-family: gotham-light;
   padding-left: 10vw;
   color: white;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 0.2fr 0.3fr 0.2fr 0.3fr;
   grid-template-rows: repeat(3, 1fr);
+  grid-row-start: 4;
 }
+
 .aside2 .c1r1 {
   grid-column-start: 1;
   grid-row-start: 1;
   padding: 0px;
+  width: max-content;
 }
 .aside2 .c2r2 {
   grid-column-start: 2;
