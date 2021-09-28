@@ -238,7 +238,7 @@ main {
 /* footer */
 footer {
   display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.6fr;
+  grid-template-columns: 0.2fr 0.5fr 0.3fr;
   grid-template-rows: 0.8fr 0.2fr;
   background-color: black;
   color: white;
@@ -269,13 +269,14 @@ footer {
   justify-content: space-between;
   text-align: left;
   list-style-type: none;
-  line-height: 3vh;
-  font-family: gotham-light;
-  font-size: 5em;
   margin-top: 0px;
   margin-left: 0px;
 }
-
+.c2_r1 a {
+  line-height: 8vh;
+  font-family: gotham-light;
+  font-size: 3em;
+}
 .c3_r1 {
   grid-column-start: 3;
   grid-row-start: 1;
