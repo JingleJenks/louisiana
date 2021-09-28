@@ -90,27 +90,27 @@ main {
   grid-column-end: 20;
 }
 
-article .column1 {
+.column1 {
   grid-column-start: 1;
 }
-img .inner_artist {
+.inner_artist {
   width: 100%;
 }
 
-article .column2 {
+.column2 {
   grid-column-start: 2;
 }
-article .c2grid {
+.c2grid {
   display: grid;
   grid-template-rows: 0.2fr 0.7fr 0.1fr;
 }
-h1 .title_artist {
+.title_artist {
   grid-row-start: 1;
 }
-p .artist_paragraph {
+.artist_paragraph {
   grid-row-start: 2;
 }
-button .artist_button {
+.artist_button {
   grid-row-start: 3;
   background-color: yellowgreen;
   color: white;
