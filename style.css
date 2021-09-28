@@ -299,6 +299,23 @@ footer {
   font-family: gotham-light;
   padding-top: 10vw;
 }
+.c3_r2 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  font-size: xx-small;
+  font-family: gotham-light;
+  padding-top: 10vw;
+}
+.c3_r2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+  list-style-type: none;
+  line-height: 3vh;
+  margin-top: 0px;
+}
 /* MEMORY */
 
 .main_memory {
