@@ -288,12 +288,16 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  text-align: left;
   list-style-type: none;
-  line-height: 3vh;
   font-family: gotham-light;
   font-size: 5em;
   margin-top: 0px;
+}
+.c3_r1 li {
+  text-align: left;
+  align-items: center;
+  display: flex;
+  line-height: 5vh;
 }
 .c1_r2 {
   grid-column-start: 1;
@@ -315,6 +319,7 @@ footer {
   font-family: gotham-light;
   padding-top: 10vw;
 }
+
 .c3_r2 ul {
   display: flex;
   flex-direction: column;
