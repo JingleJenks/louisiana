@@ -238,7 +238,7 @@ main {
 /* footer */
 footer {
   display: grid;
-  grid-template-columns: 0.2fr 0.5fr 0.3fr;
+  grid-template-columns: 0.3fr 0.5fr 0.2fr;
   grid-template-rows: 0.8fr 0.2fr;
   background-color: black;
   color: white;
@@ -255,9 +255,11 @@ footer {
   justify-content: space-evenly;
   text-align: left;
   list-style-type: none;
-  line-height: 3vh;
   margin-left: 0px;
   padding-left: 0px;
+}
+.c1_r1 a {
+  line-height: 4vh;
 }
 .c2_r1 {
   grid-column-start: 2;
@@ -273,7 +275,7 @@ footer {
   margin-left: 0px;
 }
 .c2_r1 a {
-  line-height: 8vh;
+  line-height: 10vh;
   font-family: gotham-light;
   font-size: 3em;
 }
