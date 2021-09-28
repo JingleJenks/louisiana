@@ -371,6 +371,8 @@ ul.memory a {
   display: grid;
   grid-row-start: 3;
   grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  top: -5vh;
+  position: relative;
 }
 
 .aside1 {
