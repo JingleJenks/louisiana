@@ -25,7 +25,7 @@ function loadgame() {
 
 }
 
-function flipcard() {
-    Front.classList.toggle(". card_flip");
-
+function flipcardOne() {
+    console.log("card1 clicked");
+    One.classList.remove(".front_face");
 }
