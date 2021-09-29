@@ -671,27 +671,35 @@ article.seven,
   color: white;
   padding-left: 1vw;
   padding-right: 1vw;
-
+  top: -10vh;
   font-size: 2rem;
   width: max-content;
   font-family: gotham-bold;
   margin-left: 78vw;
   position: relative;
   margin-top: 5vmin;
-  margin-bottom: 5vmin;
 }
-.box_pop {
-  width: 50vw;
-  height: 20vmin;
-  position: absolute;
-  background-color: #8dc5b2;
-  color: white;
-  padding-left: 1vw;
+
+.box_pop,
+.box_painting,
+.box_photo,
+.box_abstract {
+  grid-row-start: 4;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 50vw;
+  height: 20vmin;
+  background-color: #8dc5b2;
+  color: white;
+  padding-left: 1vw;
   margin: auto;
+  top: -10vh;
 }
+
 .lightbulb {
   grid-column-start: 1;
   display: flex;
@@ -699,7 +707,7 @@ article.seven,
   justify-content: center;
   font-size: 18vmin;
 }
-.box_pop2 {
+.box2 {
   grid-column-start: 2;
 }
 .box_pop2 p {

@@ -34,7 +34,7 @@ function flipcardOne() {
     console.log(score);
     console.log("card 1a, +1");
     if (score == 2) {
-        nextpair();
+        paintingbox();
     }
 }
 
@@ -47,7 +47,7 @@ function flipcardTwo() {
 
     console.log("card 2a, +3");
     if (score == 6) {
-        nextpair();
+        photobox();
     }
 
 }
@@ -61,7 +61,7 @@ function flipcardThree() {
 
     console.log("card 3a, +7");
     if (score == 14) {
-        nextpair();
+        abstractbox();
     }
 
 }
@@ -86,7 +86,6 @@ function flipcardFive() {
 
     score += 0;
     console.log(score);
-
 }
 
 function flipcardSix() {
@@ -96,11 +95,10 @@ function flipcardSix() {
     score += 7;
     console.log(score);
 
-    console.log("card 3, +7");
+    console.log("card 3a, +7");
     if (score == 14) {
-        nextpair();
+        abstractbox();
     }
-
 }
 
 function flipcardSeven() {
@@ -112,7 +110,7 @@ function flipcardSeven() {
 
     console.log("card 3b, +7");
     if (score == 6) {
-        nextpair();
+        photobox();
     }
 
 }
@@ -126,7 +124,7 @@ function flipcardEight() {
 
     console.log("card 1b, +3");
     if (score == 2) {
-        nextpair();
+        paintingbox();
     }
 
 }
@@ -141,16 +139,6 @@ function flipcardNine() {
     if (score == 18) {
         popbox();
     }
-
-}
-
-function nextpair() {
-    console.log("you win!");
-    score = 0;
-    if (score == 1, 3, 4, 5, 7, 8, 9, 10, 1, 12, 13, 15, 16, 17) {
-        game_end();
-    }
-    console.log(score);
 
 }
 
@@ -175,4 +163,21 @@ function game_end() {
 function popbox() {
     console.log("popbox info");
     document.querySelector(".box_pop").classList.remove("invisible");
+}
+
+function paintingbox() {
+    console.log("paintingbox info");
+    document.querySelector(".box_painting").classList.remove("invisible");
+    One.classList.add("flip_js");
+}
+
+function abstractbox() {
+    console.log("abstractbox info");
+    document.querySelector(".box_abstract").classList.remove("invisible");
+}
+
+function photobox() {
+    console.log("photobox info");
+    document.querySelector(".box_photo").classList.remove("invisible");
+
 }
