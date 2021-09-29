@@ -478,13 +478,19 @@ article.one,
   z-index: 1;
   position: absolute;
   backface-visibility: hidden;
+  background-color: white;
+}
+
+.front_face:hover {
+  transform: rotateY(180deg);
   transform-style: preserve-3d;
   transition: all 7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-color: white;
 }
-.front_face:hover {
-  transform: rotateY(180deg);
+
+.card_flip {
+  animation-name: flip 3s ease-in linear;
+  transform: rotateY (180deg) scale(1.5);
 }
 
 .game_memory img {
