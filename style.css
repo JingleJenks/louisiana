@@ -553,12 +553,16 @@ article.seven,
   grid-column-start: 1;
   background-color: #8dc5b2;
   color: white;
-  padding: 0.9vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
   font-size: 2rem;
   width: max-content;
   font-family: gotham-bold;
-  justify-self: end;
-  margin: 5vw;
+  margin-left: 78vw;
+  position: relative;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
 }
 
 .footer_memory {
