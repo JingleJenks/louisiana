@@ -1,4 +1,5 @@
 window.addEventListener("load", loadgame);
+let score = 0;
 let One = document.querySelector(".one");
 let Two = document.querySelector(".two");
 let Three = document.querySelector(".three");
@@ -29,12 +30,15 @@ function flipcardOne() {
     console.log("card1 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 1;
+    console.log("ADD five")
 }
 
 function flipcardTwo() {
     console.log("card2 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 1;
 
 }
 
@@ -42,6 +46,7 @@ function flipcardThree() {
     console.log("card3 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 3;
 
 }
 
@@ -49,35 +54,40 @@ function flipcardFour() {
     console.log("card4 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-
+    score += 3;
 }
 
 function flipcardFive() {
     console.log("card5 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 5;
 }
 
 function flipcardSix() {
     console.log("card6 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 0;
 }
 
 function flipcardSeven() {
     console.log("card7 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 5;
 }
 
 function flipcardEight() {
     console.log("card8 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 9;
 }
 
 function flipcardNine() {
     console.log("card9 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
+    score += 9;
 }
