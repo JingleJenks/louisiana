@@ -32,9 +32,9 @@ function flipcardOne() {
     One.classList.add(".card_flip");
     score += 1;
     console.log("card 1a, +1");
-    if (score > 2) {
-        console.log("YOU WON");
-        goto_successgame();
+    if (score == 2) {
+        // console.log("YOU WON");
+        successgame();
     }
 }
 
@@ -44,9 +44,9 @@ function flipcardTwo() {
     One.classList.add(".card_flip");
     score += 1;
     console.log("card 1b, +1");
-    if (score > 2) {
-        console.log("YOU WON");
-        goto_successgame();
+    if (score == 2) {
+        // console.log("YOU WON");
+        successgame();
     }
 
 }
@@ -59,7 +59,7 @@ function flipcardThree() {
     console.log("card 2a, +3");
     if (score > 6) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
 }
 
@@ -71,7 +71,7 @@ function flipcardFour() {
     console.log("card 2b, +3");
     if (score > 6) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
 }
 
@@ -83,7 +83,7 @@ function flipcardFive() {
     console.log("card 3a, +5");
     if (score > 10) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
 }
 
@@ -103,7 +103,7 @@ function flipcardSeven() {
     console.log("card 3b, +5");
     if (score > 10) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
 }
 
@@ -115,7 +115,7 @@ function flipcardEight() {
     console.log("card 4a, +9");
     if (score > 18) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
 }
 
@@ -127,6 +127,10 @@ function flipcardNine() {
     console.log("card 4b, +9");
     if (score > 18) {
         console.log("YOU WON");
-        goto_successgame();
+        successgame();
     }
+}
+
+function successgame() {
+    console.log("you win!");
 }
