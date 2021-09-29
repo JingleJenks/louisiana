@@ -1,36 +1,36 @@
 window.addEventListener("load", loadgame);
 let score = 0;
-let One = document.querySelector(".one");
-let Two = document.querySelector(".two");
-let Three = document.querySelector(".three");
-let Four = document.querySelector(".four");
-let Five = document.querySelector(".five");
-let Six = document.querySelector(".six");
-let Seven = document.querySelector(".seven");
-let Eight = document.querySelector(".eight");
-let Nine = document.querySelector(".nine");
-let Front = document.querySelector(".front_face")
+let One = document.querySelector(".flip-card1");
+let Two = document.querySelector(".flip-card2");
+let Three = document.querySelector(".flip-card3");
+let Four = document.querySelector(".flip-card4");
+let Five = document.querySelector(".flip-card5");
+let Six = document.querySelector(".flip-card6");
+let Seven = document.querySelector(".flip-card7");
+let Eight = document.querySelector(".flip-card8");
+let Nine = document.querySelector(".flip-card9");
+let Front = document.querySelector(".flip-card-front");
+let Inner = document.querySelector(".flip-card-inner");
 
 
 function loadgame() {
     console.log("loadgame");
     One.addEventListener("click", flipcardOne);
-    // Two.addEventListener("click", flipcardTwo);
-    // Three.addEventListener("click", flipcardThree);
-    // Four.addEventListener("click", flipcardFour);
-    // Five.addEventListener("click", flipcardFive);
-    // Six.addEventListener("click", flipcardSix);
-    // Seven.addEventListener("click", flipcardSeven);
-    // Eight.addEventListener("click", flipcardEight);
-    // Nine.addEventListener("click", flipcardNine);
+    Two.addEventListener("click", flipcardTwo);
+    Three.addEventListener("click", flipcardThree);
+    Four.addEventListener("click", flipcardFour);
+    Five.addEventListener("click", flipcardFive);
+    Six.addEventListener("click", flipcardSix);
+    Seven.addEventListener("click", flipcardSeven);
+    Eight.addEventListener("click", flipcardEight);
+    Nine.addEventListener("click", flipcardNine);
 
 }
 
 function flipcardOne() {
     console.log("card1 clicked");
-    One.classList.remove(".front_faceL");
-    // One.classList.add(".invisible");
-    // One.classList.add(".card_flip");
+    Inner.classList.add(".invisible");
+    // One.classList.add(".flip_js");
     score += 1;
     console.log(score);
     console.log("card 1a, +1");
@@ -43,20 +43,6 @@ function flipcardTwo() {
     console.log("card2 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 1;
-    console.log(score);
-
-    console.log("card 1b, +1");
-    if (score == 2) {
-        nextpair();
-    }
-
-}
-
-function flipcardThree() {
-    console.log("card3 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
     score += 3;
     console.log(score);
 
@@ -67,15 +53,29 @@ function flipcardThree() {
 
 }
 
+function flipcardThree() {
+    console.log("card3 clicked");
+    // One.classList.add(".invisible");
+    One.classList.add(".card_flip");
+    score += 7;
+    console.log(score);
+
+    console.log("card 3a, +7");
+    if (score == 14) {
+        nextpair();
+    }
+
+}
+
 function flipcardFour() {
     console.log("card4 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 3;
+    score += 9;
     console.log(score);
 
-    console.log("card 2b, +3");
-    if (score == 6) {
+    console.log("card 4a, +9");
+    if (score == 18) {
         nextpair();
     }
 
@@ -97,7 +97,7 @@ function flipcardSix() {
     score += 7;
     console.log(score);
 
-    console.log("card 3a, +7");
+    console.log("card 3, +7");
     if (score == 14) {
         nextpair();
     }
@@ -108,11 +108,11 @@ function flipcardSeven() {
     console.log("card7 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 7;
+    score += 3;
     console.log(score);
 
     console.log("card 3b, +7");
-    if (score == 14) {
+    if (score == 6) {
         nextpair();
     }
 
@@ -122,11 +122,11 @@ function flipcardEight() {
     console.log("card8 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 9;
+    score += 1;
     console.log(score);
 
-    console.log("card 4a, +9");
-    if (score == 18) {
+    console.log("card 1b, +3");
+    if (score == 2) {
         nextpair();
     }
 

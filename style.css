@@ -529,6 +529,10 @@ ul.memory a {
   transform: rotateY(180deg);
 }
 
+.flip_js {
+  transform: rotateY(180deg);
+}
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
