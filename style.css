@@ -444,7 +444,15 @@ ul.memory a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card1:hover .flip-card-inner,
+.flip-card2:hover .flip-card-inner,
+.flip-card3:hover .flip-card-inner,
+.flip-card4:hover .flip-card-inner,
+.flip-card5:hover .flip-card-inner,
+.flip-card6:hover .flip-card-inner,
+.flip-card7:hover .flip-card-inner,
+.flip-card8:hover .flip-card-inner,
+.flip-card9:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -461,7 +469,12 @@ ul.memory a {
   background-color: black;
   color: white;
 }
-
+.memory_grid h1 {
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+}
 .flip-card-back {
   width: 100%;
   height: 100%;
