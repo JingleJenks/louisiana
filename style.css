@@ -419,17 +419,14 @@ ul.memory a {
 
 .aside2 {
   background-color: #8dc5b2;
-  transform: rotate(-10deg);
   width: 90vw;
   overflow: hidden;
-  top: -20vh;
-  left: -6vw;
   position: relative;
   margin: 0px;
   display: grid;
   font-family: gotham-light;
   padding: 0px;
-  padding-left: 10vw;
+  padding-left: 5vmin;
   color: white;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: repeat(3, 1fr);
@@ -540,21 +537,14 @@ article.seven,
   position: relative;
 }
 
-.aside_2 {
-  font-family: gotham-light;
-  grid-column-start: 3;
-  /* width: 10vw; */
-  margin-left: -5vw;
-  margin-right: 0.5vw;
-}
 .aside_title {
   text-align: left;
 }
-.aside_2 li {
+.aside2 li {
   line-height: 1.5rem;
   list-style-type: none;
 }
-.aside_2 ul {
+.aside2 ul {
   list-style-position: inside;
   padding-left: 0px;
 }
