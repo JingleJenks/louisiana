@@ -139,10 +139,7 @@ function flipcardNine() {
     if (score == 18) {
         popbox();
     }
-
 }
-
-
 
 // function nextpair() {
 //     console.log("you win!");
