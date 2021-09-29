@@ -13,7 +13,15 @@ let Front = document.querySelector(".front_face")
 
 function loadgame() {
     console.log("loadgame");
-    Front.addEventListener("click", flipcard);
+    One.addEventListener("click", flipcard);
+    Two.addEventListener("click", flipcard);
+    Three.addEventListener("click", flipcard);
+    Four.addEventListener("click", flipcard);
+    Five.addEventListener("click", flipcard);
+    Six.addEventListener("click", flipcard);
+    Seven.addEventListener("click", flipcard);
+    Eight.addEventListener("click", flipcard);
+    Nine.addEventListener("click", flipcard);
 
 }
 
