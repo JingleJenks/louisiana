@@ -433,7 +433,78 @@ ul.memory a {
   height: 18vmin;
   margin: 1vmin;
 }
-
+.flip-card1 span:before {
+  content: "L";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card2 span:before {
+  content: "O";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card3 span:before {
+  content: "U";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card4 span:before {
+  content: "I";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card5 span:before {
+  content: "S";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card6 span:before {
+  content: "I";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card7 span:before {
+  content: "A";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card8 span:before {
+  content: "N";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
+.flip-card9 span:before {
+  content: "A";
+  padding: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 18vmin;
+  color: white;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -469,12 +540,14 @@ ul.memory a {
   background-color: black;
   color: white;
 }
-.memory_grid h1 {
+/* .memory_grid h1 {
   padding: 0px;
   margin: auto;
   text-align: left;
   font-size: 18vmin;
-}
+  color: white;
+} */
+
 .flip-card-back {
   width: 100%;
   height: 100%;
@@ -485,6 +558,7 @@ ul.memory a {
   width: 100%;
   height: 100%;
 }
+
 /* END OF TEST  */
 .game_memory {
   display: grid;
@@ -573,10 +647,10 @@ article.one,
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* .card_flip {
+.card_flip {
   animation-name: flip 3s ease-in linear;
   transform: rotateY (180deg) scale(1.5);
-} */
+}
 
 .game_memory img {
   /* display: block; */
@@ -603,7 +677,7 @@ article.seven,
   grid-row-start: 3;
   position: relative;
 }
-
+/* END OF 1st memory */
 .aside_title {
   text-align: left;
 }
