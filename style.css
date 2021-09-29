@@ -378,7 +378,7 @@ ul.memory a {
 .row2 {
   display: grid;
   grid-row-start: 3;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
   top: -20vh;
   position: relative;
   margin-bottom: 0px;
@@ -387,8 +387,8 @@ ul.memory a {
 
 .aside1 {
   font-family: gotham-light;
-  grid-column-start: 1;
-  width: max-content;
+  grid-column-start: 2;
+  width: 8vmin;
   margin-left: 2vw;
 }
 .aside1 .aside_title {
@@ -414,11 +414,13 @@ ul.memory a {
 
 /* TEST MEMORY!!!! */
 .memory_grid {
+  justify-content: center;
   display: flex;
   width: 60vmin;
   height: 60vmin;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto;
 }
 .flip-card1,
 .flip-card2,
@@ -517,7 +519,7 @@ ul.memory a {
 }
 
 /* flip cards */
-.flip-card1:hover .flip-card-inner,
+/* .flip-card1:hover .flip-card-inner,
 .flip-card2:hover .flip-card-inner,
 .flip-card3:hover .flip-card-inner,
 .flip-card4:hover .flip-card-inner,
@@ -527,10 +529,12 @@ ul.memory a {
 .flip-card8:hover .flip-card-inner,
 .flip-card9:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
+} */
 
 .flip_js {
   transform: rotateY(180deg);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .flip-card-front,
@@ -565,39 +569,16 @@ ul.memory a {
 }
 
 .aside2 {
-  background-color: #8dc5b2;
-  width: 90vw;
-  overflow: hidden;
-  position: relative;
-  margin: 0px;
-  display: grid;
   font-family: gotham-light;
-  padding: 0px;
-  padding-left: 5vmin;
+  grid-column-start: 4;
+  width: 15vmin;
+  margin-left: 2vw;
+  background-color: #8dc5b2;
   color: white;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-start: 4;
+  padding: 4vmin;
+  z-index: -5;
 }
 
-.aside2 .c1r1 {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  padding: 0px;
-  width: max-content;
-}
-.aside2 .c2r2 {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  padding: 0px;
-  margin-left: -5vw;
-}
-.aside2 .c3r3 {
-  grid-column-start: 3;
-  grid-row-start: 3;
-  padding: 0px;
-  margin-left: -5vw;
-}
 article.one,
 .two,
 .three,
@@ -634,10 +615,6 @@ article.one,
   background-color: lightblue;
   content: "L";
 }
-.invisible {
-  display: none;
-}
-
 .card_flip {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
@@ -703,7 +680,31 @@ article.seven,
   margin-top: 5vmin;
   margin-bottom: 5vmin;
 }
-
+.box_pop {
+  width: 50vw;
+  height: 20vmin;
+  position: absolute;
+  background-color: #8dc5b2;
+  color: white;
+  padding-left: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  margin: auto;
+}
+.lightbulb {
+  grid-column-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18vmin;
+}
+.box_pop2 {
+  grid-column-start: 2;
+}
+.box_pop2 p {
+  font-family: gotham-light;
+}
 .footer_memory {
   display: grid;
   grid-row-start: 6;
@@ -712,4 +713,8 @@ article.seven,
   background-color: black;
   color: white;
   padding: 3vw;
+  margin-left: ;
+}
+.invisible {
+  display: none;
 }

@@ -29,8 +29,7 @@ function loadgame() {
 
 function flipcardOne() {
     console.log("card1 clicked");
-    Inner.classList.add(".invisible");
-    // One.classList.add(".flip_js");
+    One.classList.add("flip_js");
     score += 1;
     console.log(score);
     console.log("card 1a, +1");
@@ -41,8 +40,8 @@ function flipcardOne() {
 
 function flipcardTwo() {
     console.log("card2 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Two.classList.add("flip_js");
+
     score += 3;
     console.log(score);
 
@@ -55,8 +54,8 @@ function flipcardTwo() {
 
 function flipcardThree() {
     console.log("card3 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Three.classList.add("flip_js");
+
     score += 7;
     console.log(score);
 
@@ -69,22 +68,22 @@ function flipcardThree() {
 
 function flipcardFour() {
     console.log("card4 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Four.classList.add("flip_js");
+
     score += 9;
     console.log(score);
 
     console.log("card 4a, +9");
     if (score == 18) {
-        nextpair();
+        popbox();
     }
 
 }
 
 function flipcardFive() {
     console.log("card5 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Five.classList.add("flip_js");
+
     score += 0;
     console.log(score);
 
@@ -92,8 +91,8 @@ function flipcardFive() {
 
 function flipcardSix() {
     console.log("card6 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Six.classList.add("flip_js");
+
     score += 7;
     console.log(score);
 
@@ -106,8 +105,8 @@ function flipcardSix() {
 
 function flipcardSeven() {
     console.log("card7 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Seven.classList.add("flip_js");
+
     score += 3;
     console.log(score);
 
@@ -120,8 +119,8 @@ function flipcardSeven() {
 
 function flipcardEight() {
     console.log("card8 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Eight.classList.add("flip_js");
+
     score += 1;
     console.log(score);
 
@@ -134,13 +133,13 @@ function flipcardEight() {
 
 function flipcardNine() {
     console.log("card9 clicked");
-    // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    Nine.classList.add("flip_js");
+
     score += 9;
     console.log(score);
     console.log("card 4b, +9");
     if (score == 18) {
-        nextpair();
+        popbox();
     }
 
 }
@@ -171,4 +170,9 @@ function game_end() {
     console.log("game over!");
     console.log(score);
 
+}
+
+function popbox() {
+    console.log("popbox info");
+    document.querySelector(".box_pop").classList.remove("invisible");
 }
