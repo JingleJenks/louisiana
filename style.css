@@ -338,13 +338,14 @@ footer {
 .main_memory {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: unset;
+  grid-template-columns: 1fr;
 }
 ul.memory a {
   color: black;
 }
 .title {
   display: grid;
+  grid-column-start: 1;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 0px;
@@ -359,6 +360,7 @@ ul.memory a {
   margin-bottom: 1vh;
   z-index: -1;
   grid-row-start: 1;
+  grid-column-end: 2;
 }
 .game_title2 {
   color: black;
@@ -418,7 +420,7 @@ ul.memory a {
 .aside2 {
   background-color: #8dc5b2;
   transform: rotate(-10deg);
-  width: 100vw;
+  width: 90vw;
   overflow: hidden;
   top: -20vh;
   left: -6vw;
@@ -542,9 +544,6 @@ article.seven,
   margin: 5vw;
 }
 
-/* .tar {
-  float: right;
-} */
 .footer_memory {
   display: grid;
   grid-row-start: 6;
