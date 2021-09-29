@@ -15,26 +15,27 @@ let Front = document.querySelector(".front_face")
 function loadgame() {
     console.log("loadgame");
     One.addEventListener("click", flipcardOne);
-    Two.addEventListener("click", flipcardTwo);
-    Three.addEventListener("click", flipcardThree);
-    Four.addEventListener("click", flipcardFour);
-    Five.addEventListener("click", flipcardFive);
-    Six.addEventListener("click", flipcardSix);
-    Seven.addEventListener("click", flipcardSeven);
-    Eight.addEventListener("click", flipcardEight);
-    Nine.addEventListener("click", flipcardNine);
+    // Two.addEventListener("click", flipcardTwo);
+    // Three.addEventListener("click", flipcardThree);
+    // Four.addEventListener("click", flipcardFour);
+    // Five.addEventListener("click", flipcardFive);
+    // Six.addEventListener("click", flipcardSix);
+    // Seven.addEventListener("click", flipcardSeven);
+    // Eight.addEventListener("click", flipcardEight);
+    // Nine.addEventListener("click", flipcardNine);
 
 }
 
 function flipcardOne() {
     console.log("card1 clicked");
+    One.classList.remove(".front_faceL");
     // One.classList.add(".invisible");
-    One.classList.add(".card_flip");
+    // One.classList.add(".card_flip");
     score += 1;
+    console.log(score);
     console.log("card 1a, +1");
     if (score == 2) {
-        // console.log("YOU WON");
-        successgame();
+        nextpair();
     }
 }
 
@@ -43,10 +44,11 @@ function flipcardTwo() {
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
     score += 1;
+    console.log(score);
+
     console.log("card 1b, +1");
     if (score == 2) {
-        // console.log("YOU WON");
-        successgame();
+        nextpair();
     }
 
 }
@@ -56,11 +58,13 @@ function flipcardThree() {
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
     score += 3;
+    console.log(score);
+
     console.log("card 2a, +3");
-    if (score > 6) {
-        console.log("YOU WON");
-        successgame();
+    if (score == 6) {
+        nextpair();
     }
+
 }
 
 function flipcardFour() {
@@ -68,30 +72,35 @@ function flipcardFour() {
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
     score += 3;
+    console.log(score);
+
     console.log("card 2b, +3");
-    if (score > 6) {
-        console.log("YOU WON");
-        successgame();
+    if (score == 6) {
+        nextpair();
     }
+
 }
 
 function flipcardFive() {
     console.log("card5 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 5;
-    console.log("card 3a, +5");
-    if (score > 10) {
-        console.log("YOU WON");
-        successgame();
-    }
+    score += 0;
+    console.log(score);
+
 }
 
 function flipcardSix() {
     console.log("card6 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 0;
+    score += 7;
+    console.log(score);
+
+    console.log("card 3a, +7");
+    if (score == 14) {
+        nextpair();
+    }
 
 }
 
@@ -99,12 +108,14 @@ function flipcardSeven() {
     console.log("card7 clicked");
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
-    score += 5;
-    console.log("card 3b, +5");
-    if (score > 10) {
-        console.log("YOU WON");
-        successgame();
+    score += 7;
+    console.log(score);
+
+    console.log("card 3b, +7");
+    if (score == 14) {
+        nextpair();
     }
+
 }
 
 function flipcardEight() {
@@ -112,11 +123,13 @@ function flipcardEight() {
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
     score += 9;
+    console.log(score);
+
     console.log("card 4a, +9");
-    if (score > 18) {
-        console.log("YOU WON");
-        successgame();
+    if (score == 18) {
+        nextpair();
     }
+
 }
 
 function flipcardNine() {
@@ -124,13 +137,38 @@ function flipcardNine() {
     // One.classList.add(".invisible");
     One.classList.add(".card_flip");
     score += 9;
+    console.log(score);
     console.log("card 4b, +9");
-    if (score > 18) {
-        console.log("YOU WON");
-        successgame();
+    if (score == 18) {
+        nextpair();
     }
+
 }
 
-function successgame() {
+function nextpair() {
     console.log("you win!");
+    score = 0;
+    if (score == 1, 3, 4, 5, 7, 8, 9, 10, 1, 12, 13, 15, 16, 17) {
+        game_end();
+    }
+    console.log(score);
+
+}
+
+
+
+// function nextpair() {
+//     console.log("you win!");
+//     score = 0;
+//     if (score == 36) {
+//         game_end();
+//     }
+//     console.log(score);
+
+// }
+
+function game_end() {
+    console.log("game over!");
+    console.log(score);
+
 }
