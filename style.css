@@ -683,7 +683,8 @@ article.seven,
 .box_pop,
 .box_painting,
 .box_photo,
-.box_abstract {
+.box_abstract,
+.box_end {
   grid-row-start: 4;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -696,6 +697,8 @@ article.seven,
   background-color: #8dc5b2;
   color: white;
   padding-left: 1vw;
+  padding-right: 1vw;
+
   margin: auto;
   top: -10vh;
 }
@@ -726,3 +729,14 @@ article.seven,
 .invisible {
   display: none;
 }
+/* IMAGE PAGE */
+
+body .image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .imagesss img {
+    width: 100%;
+  } */
+  
