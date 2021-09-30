@@ -352,7 +352,7 @@ ul.memory a {
 }
 .game_title {
   color: black;
-  font-size: 10rem;
+  font-size: 9rem;
   font-family: gotham;
   display: flex;
   justify-content: flex-start;
@@ -361,10 +361,11 @@ ul.memory a {
   z-index: -1;
   grid-row-start: 1;
   grid-column-end: 2;
+  margin-left: 5vw;
 }
 .game_title2 {
   color: black;
-  font-size: 10rem;
+  font-size: 9rem;
   font-family: gotham;
   display: flex;
   justify-content: flex-start;
@@ -373,6 +374,7 @@ ul.memory a {
   z-index: -1;
   grid-column-start: 2;
   grid-row-start: 2;
+  margin-right: 5vw;
 }
 
 .row2 {
@@ -683,24 +685,43 @@ article.seven,
 .box_pop,
 .box_painting,
 .box_photo,
-.box_abstract,
-.box_end {
-  grid-row-start: 4;
+.box_abstract {
+  position: absolute;
+  top: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
-  position: relative;
-  margin-bottom: 0px;
+  /* position: relative; */
+  left: 8vw;
   padding-bottom: 0px;
-  width: 50vw;
+  width: 20vw;
+  height: auto;
+  background-color: #628b7e;
+  color: white;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  z-index: 10;
+  font-family: gotham-light;
+  line-height: 2vh;
+}
+.box_end {
+  /* grid-row-start: 4; */
+  position: absolute;
+  top: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  /* position: relative; */
+  left: 20vw;
+  padding-bottom: 0px;
+  width: 30vw;
   height: 20vmin;
   background-color: #8dc5b2;
   color: white;
   padding-left: 1vw;
   padding-right: 1vw;
-
-  margin: auto;
-  top: -10vh;
+  z-index: 10;
+  font-family: gotham-light;
 }
 
 .lightbulb {
