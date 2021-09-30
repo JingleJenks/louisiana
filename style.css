@@ -749,7 +749,7 @@ article.seven,
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18vmin;
+  font-size: 11vmin;
 }
 .box2 {
   grid-column-start: 2;

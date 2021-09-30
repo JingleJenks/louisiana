@@ -39,7 +39,7 @@ function checkForMisMatch() {
 
             active.forEach((elem) => elem.classList.remove("flip_js"));
 
-        }, 1000);
+        }, 3000);
 
     }
 
