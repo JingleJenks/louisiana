@@ -724,7 +724,7 @@ article.seven,
   background-color: black;
   color: white;
   padding: 3vw;
-  margin-left: ;
+  margin-left: 3vmin;
 }
 .invisible {
   display: none;
@@ -732,11 +732,11 @@ article.seven,
 /* IMAGE PAGE */
 
 body .image {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
-  .imagesss img {
-    width: 100%;
-  } */
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+.imagesss img {
+  width: 100%;
+}
