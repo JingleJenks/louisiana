@@ -27,23 +27,6 @@ function loadgame() {
 
 }
 
-function checkForMisMatch() {
-
-    const active = document.querySelectorAll(".flip_js");
-
-    if (active.length == 2) {
-
-        score = 0;
-
-        setTimeout(() => {
-
-            active.forEach((elem) => elem.classList.remove("flip_js"));
-
-        }, 3000);
-
-    }
-
-}
 
 function flipcardOne() {
     One.classList.add("flip_js");
@@ -302,4 +285,23 @@ function flipback4() {
     document.querySelector(".box_pop").classList.add("invisible");
     score = 0;
     // loadgame();
+}
+
+
+function checkForMisMatch() {
+
+    const active = document.querySelectorAll(".flip_js");
+
+    if (active.length == 2) {
+
+        score = 0;
+
+        setTimeout(() => {
+
+            active.forEach((elem) => elem.classList.remove("flip_js"));
+
+        }, 3000);
+
+    }
+
 }

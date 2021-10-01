@@ -433,7 +433,10 @@ ul.memory a {
   grid-row-end: 3;
   background-color: black;
 }
-
+.selectedart {
+  font-family: gotham-bold;
+  font-size: 2vmin;
+}
 /* TEST MEMORY!!!! */
 .memory_grid {
   justify-content: center;
@@ -765,7 +768,6 @@ article.seven,
   background-color: black;
   color: white;
   padding: 3vw;
-  margin-left: 3vmin;
 }
 .invisible {
   display: none;
